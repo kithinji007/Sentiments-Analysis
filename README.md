@@ -1,2 +1,2 @@
 # Sentiments-Analysis
-A sentiment analysis Model
+# Sentiment Analysis of Customer Tweets: Gaining Competitive Insights for Google and Apple Products
