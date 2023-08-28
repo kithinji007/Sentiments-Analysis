@@ -59,4 +59,30 @@ From the visualiatin above, the product that recieved most tweets is google. The
 ![image](https://github.com/kithinji007/Sentiments-Analysis/assets/128479803/5fc91610-eacc-4a63-9bc2-d06192177293)
 From the box plots, we notice that most of the tweets whose lengths are longer hold negative sentiments. Also, the margine between the three sentiments is not too far apart. Therefore, it is safe to say that the length of the tweets is not enough to conclude on the customers' sentiments
 
+## Pre-processing for NLP
+### Tokenization, Stemmer, and Stopwords Objects
+Here, we will preprocesses textual data by cleaning and tokenizing it, perform sentiment-based word frequency analysis, and presents the results using bar plots and word clouds. These visualizations help gain insights into the most common words associated with different sentiments in the tweets.
 
+The pre-processing steps include:-
+
+Converting it to lowercase, removing URLs, specific words ("mention," "link," "2," "rt"), punctuation, and filtering out common words(stopwords) that don't contribute much to the analysis.
+
+![image](https://github.com/kithinji007/Sentiments-Analysis/assets/128479803/305d37a3-7f2d-41da-a167-a659139c8955)
+
+## Modelling
+In our sentiment analysis project, we explored the effectiveness of various machine learning models in categorizing text-based data into sentiment classes. We employed a range of models to capture the nuances of sentiment expressed in textual content. These models included:
+
+### Naives Bayes
+It's particularly suited for text classification tasks due to its simplicity and efficiency. Despite its "naive" assumption of independence between features, Naive Bayes can perform remarkably well on sentiment analysis tasks by capturing word occurrence patterns.
+
+### Random Forest
+This ensemble lesrning technique offers robustness against overfitting and the ability to capture complex interactions in the data. Also it is really good in handling both numerical and categorical features, making them suitable for text-based sentiment analysis.
+
+### Support Vector Machine (SVM)
+This powerful classification method that aims to find the optimal hyperplane that best separates data points of different classes. This will be great in text classification tasks like sentiment analysis to find the most discriminating features.
+
+### Neural Networks
+In sentiment analysis, neural networks have demonstrated their ability to capture contextual information and long-range dependencies in text. This will help automatically learn complex patterns and hierarchical representations from data.
+Each of these models brings unique strengths to the task of sentiment analysis.
+
+In order to start modeling we split the data into training and testing sets and vectorize our textual data into a format that machine learning algorithms can process.
