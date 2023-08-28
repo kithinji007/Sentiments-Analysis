@@ -26,7 +26,37 @@ Alternative Hypothesis (Ha): Our model's ability to accurately classify tweet se
 ## Data Understanding
 The dataset used in this project,sourced from https://data.world/crowdflower/brands-and-product-emotions, consists of 3 columns and 9093 rows. The columns include;
 
-tweet_text : contains the text of tweets.
-emotion_in_tweet_is_directed_at : column provides insights into the emotions expressed.
-is_there_an_emotion_directed_at_a_brand_or_product : indicates the brand/product the emotion is directed at.
-2.1 Import Libraries
+## The following observations were made;
+
+The dataset contains a total of 9093 rows and 3 columns.
+
+The columns are labeled 'tweet_text', 'emotion_in_tweet_is_directed_at', and 'is_there_an_emotion_directed_at_a_brand_or_product'.
+
+The 'is_there_an_emotion_directed_at_a_brand_or_product' column has four unique values: 'No emotion toward brand or product', 'Positive emotion', 'Negative emotion', and "I can't tell".
+
+The 'emotion_in_tweet_is_directed_at' column has nine unique values.
+
+Null values are present in the 'tweet_text' and 'emotion_in_tweet_is_directed_at' columns. The 'tweet_text' column has one null value, and the 'emotion_in_tweet_is_directed_at' column has 5802 null values.
+
+## Data Cleaning and Preparation
+Column names were changed to enhance the dataset's readability, clarity, and user-friendliness. It contributes to smoother data analysis and facilitates sharing insights, as the new names accurately represent the content of the columns. There were a total of 46 duplicates that were erased. The following is the breakdown of the null values that were also erased; tweets (1), brand (5,786). We decided to drop the 'I can't tell' because we wanted to classify the sentiments in 'positive' , 'negative' and 'no emotion' as this will help us enhance the quality of our analysis.
+
+## EDA
+
+### Univariate
+![image](https://github.com/kithinji007/Sentiments-Analysis/assets/128479803/0790ea1e-c914-465d-88d7-8b9215e2950f)
+The distribution of the texts seem to be left skewed From above histogram, the tweets are comprised of around 29-160 characters
+
+![image](https://github.com/kithinji007/Sentiments-Analysis/assets/128479803/72563985-0fba-48f6-9629-f02da7fa4f9e)
+
+## Bivariate Analysis
+Sentiment vs. Product To analyze how sentiment (positive, negative, neutral) varies across different products (Apple, Google) mentioned in the tweets. This can help you understand how customers perceive each company's products.
+
+![image](https://github.com/kithinji007/Sentiments-Analysis/assets/128479803/5d6b68fe-dbaf-4e14-a7b1-a4fa9a38aebe)
+
+From the visualiatin above, the product that recieved most tweets is google. The common trend is that most customers don't hold any emotion towards the product.
+
+![image](https://github.com/kithinji007/Sentiments-Analysis/assets/128479803/5fc91610-eacc-4a63-9bc2-d06192177293)
+From the box plots, we notice that most of the tweets whose lengths are longer hold negative sentiments. Also, the margine between the three sentiments is not too far apart. Therefore, it is safe to say that the length of the tweets is not enough to conclude on the customers' sentiments
+
+
