@@ -86,3 +86,21 @@ In sentiment analysis, neural networks have demonstrated their ability to captur
 Each of these models brings unique strengths to the task of sentiment analysis.
 
 In order to start modeling we split the data into training and testing sets and vectorize our textual data into a format that machine learning algorithms can process.
+
+### Naive Bayes Classifier
+![image](https://github.com/kithinji007/Sentiments-Analysis/assets/128479803/231c0a1a-c73d-4de0-83a6-0f7eca1bda10)
+
+The Naive Bayes baseline model performed well with an accuracy score of 87% on the training set vs 77% on the test set. Though the model has performed reasonably well on unseen data, the 10% difference with training set indicates potential issues with overfitting. Let's look at another model.
+
+### Random Forest
+![image](https://github.com/kithinji007/Sentiments-Analysis/assets/128479803/78264370-b365-4abc-a7fe-07a9e76a0f8b)
+
+Our Random forest baseline model has peformed well on the training set with an accuracy of 98% and was also able to learn meaning ful patterns by having an 86% accuracy on unseen data. However, we can improve the model to better generalize the data and avoid issues with overfitting.
+
+Hyperparameter Tuning Random Forest
+![image](https://github.com/kithinji007/Sentiments-Analysis/assets/128479803/29aad11a-3a4a-47b7-b3bc-3b1ff07858c0)
+Our tuned Random Froest classifier performed the same with the RF baseline model with accuracy of 98% on training and 86% on the validation set. No improvement here, as seen the best parameters were 'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100
+
+### Support Vector Machine
+![image](https://github.com/kithinji007/Sentiments-Analysis/assets/128479803/4e1abd2e-9f4f-4a88-99cc-4ccbe6fafdab)
+Our SVM model also performed very well on the training set with an accuracy of 96% and 87% on the unseen dataset. We can still improve the model's ability to generalize data better by tuning it.
