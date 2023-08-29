@@ -104,3 +104,52 @@ Our tuned Random Froest classifier performed the same with the RF baseline model
 ### Support Vector Machine
 ![image](https://github.com/kithinji007/Sentiments-Analysis/assets/128479803/4e1abd2e-9f4f-4a88-99cc-4ccbe6fafdab)
 Our SVM model also performed very well on the training set with an accuracy of 96% and 87% on the unseen dataset. We can still improve the model's ability to generalize data better by tuning it.
+
+#### Using Deep Learning
+The model is designed to classify input data into one of three classes. The ReLU activation functions introduce non-linearity to the network, allowing it to learn complex relationships in the data. The dropout layers help prevent overfitting by randomly deactivating neurons during training.
+
+![image](https://github.com/kithinji007/Sentiments-Analysis/assets/128479803/6e113869-6983-4773-bc50-3aae8c8810d6)
+The Neural Network performed really well with 85% accuracy. The plot showcasing the learning curve is ideal with both the training and validation curve accuracy increasing with the number of epochs and then later plateaus indicating that the model has learnt from the training data and generalizes well to new data.
+
+The loss curve however, might indicate overfitting with an increasing number of epochs. This is seen as the loss decreases on the training data while increasing on validation data.
+
+#### Tuning our Deep Neural Network
+![image](https://github.com/kithinji007/Sentiments-Analysis/assets/128479803/a5ba9050-4e4e-405d-b62a-a6210821ce86)
+The Neural Network performed really well with 85% accuracy. The plot showcasing the learning curve is ideal with both the training and validation curve accuracy increasing with the number of epochs and then later plateaus indicating that the model has learnt from the training data and generalizes well to new data.
+
+The loss curve however, might indicate overfitting with an increasing number of epochs. This is seen as the loss decreases on the training data while increasing on validation data.
+
+## Model Evaluation
+The tuned Random Forest model appears to be a good candidate. It's yielding competitive accuracy on both the training and validation sets, and the accuracy drop is relatively small, indicating good generalization. It also has a high F1-Score 86% which shows a good balance between precision and recall.
+
+## Final Model
+Our final model is the tuned Random forest with best parameters as {'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 20}
+
+![image](https://github.com/kithinji007/Sentiments-Analysis/assets/128479803/ef1fe070-418f-46f6-b7ca-b9dc1c615359)
+
+## Conclusion
+Google and Apple products are vastly used in the world. This study successfully achieved its objectives aimed at understanding the sentiment dynamics surrounding Google and Apple products on Twitter.
+
+Through the development of a specialized sentiment analysis model, we discerned nuanced differences in sentiments between these two tech giants. Our best model was Random Forest Model since it displayed a high F1 Score of 86%; It yields a competitive accuracy on both the training and validation sets, and the accuracy drop is relatively small, indicating good generalization.
+
+Our analysis revealed varying degrees of positivity and negativity in the Twitter discussions concerning their products, shedding light on the overall inclusive sentiment view towards both brands. Additionally, by investigating recurring topics associated with positive and negative sentiments using a word cloud for each sentiment, we gained valuable insights into the prevailing themes that influence public perception of Google and Apple. This research contributes to a deeper comprehension of how sentiments and topics converge to shape the online discourse surrounding these companies, offering a valuable resource for both academia and industry.
+
+## Recommendations For Our Stakeholders
+Craft marketing messages that align with the predominant sentiments expressed by consumers. Tailor your messages to resonate with the positive aspects and address concerns highlighted in sentiment analysis.
+
+Collaborate with influencers who align with the positive sentiments around your brand. Their endorsement can amplify positive sentiment and reach a wider audience.
+
+Regularly assess the impact of your marketing strategies on sentiment trends. Track changes in sentiment over time to gauge the effectiveness of your efforts and make data-driven adjustments
+
+## NextSteps
+Incorporate more advanced natural language processing techniques and machine learning algorithms to enhance the accuracy of sentiment classification. Note that the project is resource intensive, having GPUs will reduce model runtime
+
+Extend the analysis over a longer time period to observe trends and changes in sentiment over time. This can provide deeper insights into the effects of product launches, events, and other external factors on public sentiment.
+
+Collaborate with data scientists and NLP experts to continually refine the sentiment analysis model. This will ensure accurate classification of sentiment in tweets, enabling the agency to deliver high-quality insights to clients.
+
+Analyze sentiment based on user demographics such as age, gender, and location. This helps tailor marketing strategies to specific consumer segments and craft messaging that resonates with different groups.
+
+Develop predictive models to anticipate shifts in sentiment. This proactive approach allows the agency to advise clients on adjusting their strategies ahead of sentiment fluctuations.
+
+Work closely with clients to integrate sentiment insights from customers into their marketing strategies. Collaborate on content creation, social media campaigns, and product messaging based on sentiment trends.
