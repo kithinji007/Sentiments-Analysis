@@ -18,6 +18,7 @@ To investigate the recurring topics of interest associated with negative or posi
 ## Stakeholders
 Our stakeholder is a marketting agency seeking to understand client product needs based on their twitter sentiments. The client's aim is to also offer consumer insights with regards to the positive and negative mentions of the Google and Apple products.
 
+
 ## Hypothesis
 Null Hypothesis (H0): Our model's ability to accurately classify tweet sentiments between Google and Apple products is not significantly different from random chance.
 
@@ -114,7 +115,7 @@ The Neural Network performed really well with 85% accuracy. The plot showcasing 
 The loss curve however, might indicate overfitting with an increasing number of epochs. This is seen as the loss decreases on the training data while increasing on validation data.
 
 #### Tuning our Deep Neural Network
-![image](https://github.com/kithinji007/Sentiments-Analysis/assets/128479803/a5ba9050-4e4e-405d-b62a-a6210821ce86)
+![download](https://github.com/kithinji007/Sentiments-Analysis/assets/110093196/918941e7-9dee-4092-8e09-6cf84e43eab1)
 The Neural Network performed really well with 85% accuracy. The plot showcasing the learning curve is ideal with both the training and validation curve accuracy increasing with the number of epochs and then later plateaus indicating that the model has learnt from the training data and generalizes well to new data.
 
 The loss curve however, might indicate overfitting with an increasing number of epochs. This is seen as the loss decreases on the training data while increasing on validation data.
