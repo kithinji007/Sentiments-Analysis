@@ -40,7 +40,8 @@ From the visualiatin above, the product that recieved most tweets is google. The
 ![image](https://github.com/kithinji007/Sentiments-Analysis/assets/128479803/305d37a3-7f2d-41da-a167-a659139c8955)
 
 ## Modelling
-In our sentiment analysis project, we explored the effectiveness of various machine learning models in categorizing text-based data into sentiment classes. We employed a range of models to capture the nuances of sentiment expressed in textual content. These models included:
+>- In our sentiment analysis project, we explored the effectiveness of various machine learning models in categorizing text-based data into sentiment classes. We employed a range of models to capture the nuances of sentiment expressed in textual content. 
+>- The best performing models were Random forest and Neural Network respectively.
 
 
 ## Final Model
@@ -50,7 +51,9 @@ It  had an accuracy of 98% on training data against an 86% on test data.
 
 
 ## Comparing it with Neural Network
-![image](image.png)
+
+![NN](image-1.png)
+
 The Neural Network performed really well with 85% accuracy. The plot showcasing the learning curve is ideal with both the training and validation curve accuracy increasing with the number of epochs and then later plateaus indicating that the model has learnt from the training data and generalizes well to new data.
 
 The loss curve however, might indicate overfitting with an increasing number of epochs. This is seen as the loss decreases on the training data while increasing on validation data.
