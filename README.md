@@ -45,9 +45,9 @@ From the visualiatin above, the product that recieved most tweets is google. The
 
 
 ## Final Model
-Our final model is the tuned Random forest
+Our final model is the tuned Random forest with an accuracy of 98% on training data against an 86% on test data.
 ![image](https://github.com/kithinji007/Sentiments-Analysis/assets/128479803/ef1fe070-418f-46f6-b7ca-b9dc1c615359)
-It  had an accuracy of 98% on training data against an 86% on test data.
+
 
 
 ## Comparing it with Neural Network
