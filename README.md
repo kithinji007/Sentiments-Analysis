@@ -42,25 +42,15 @@ From the visualiatin above, the product that recieved most tweets is google. The
 ## Modelling
 In our sentiment analysis project, we explored the effectiveness of various machine learning models in categorizing text-based data into sentiment classes. We employed a range of models to capture the nuances of sentiment expressed in textual content. These models included:
 
-### Neural Networks
-In sentiment analysis, neural networks have demonstrated their ability to capture contextual information and long-range dependencies in text. This will help automatically learn complex patterns and hierarchical representations from data.
-Each of these models brings unique strengths to the task of sentiment analysis.
 
-In order to start modeling we split the data into training and testing sets and vectorize our textual data into a format that machine learning algorithms can process.
-
-
-### Random Forest
-![image](https://github.com/kithinji007/Sentiments-Analysis/assets/128479803/78264370-b365-4abc-a7fe-07a9e76a0f8b)
-
-Our Random forest baseline model has peformed well on the training set with an accuracy of 98% and was also able to learn meaning ful patterns by having an 86% accuracy on unseen data. However, we can improve the model to better generalize the data and avoid issues with overfitting.
-
-Hyperparameter Tuning Random Forest
-![image](https://github.com/kithinji007/Sentiments-Analysis/assets/128479803/29aad11a-3a4a-47b7-b3bc-3b1ff07858c0)
-Our tuned Random Froest classifier performed the same with the RF baseline model with accuracy of 98% on training and 86% on the validation set. No improvement here, as seen the best parameters were 'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100
+## Final Model
+Our final model is the tuned Random forest
+![image](https://github.com/kithinji007/Sentiments-Analysis/assets/128479803/ef1fe070-418f-46f6-b7ca-b9dc1c615359)
+It  had an accuracy of 98% on training data against an 86% on test data.
 
 
-#### Neural Network
-![image](https://github.com/kithinji007/Sentiments-Analysis/assets/128479803/a5ba9050-4e4e-405d-b62a-a6210821ce86)
+## Comparing it with Neural Network
+![image](image.png)
 The Neural Network performed really well with 85% accuracy. The plot showcasing the learning curve is ideal with both the training and validation curve accuracy increasing with the number of epochs and then later plateaus indicating that the model has learnt from the training data and generalizes well to new data.
 
 The loss curve however, might indicate overfitting with an increasing number of epochs. This is seen as the loss decreases on the training data while increasing on validation data.
@@ -68,10 +58,6 @@ The loss curve however, might indicate overfitting with an increasing number of 
 ## Model Evaluation
 The tuned Random Forest model appears to be a good candidate. It's yielding competitive accuracy on both the training and validation sets, and the accuracy drop is relatively small, indicating good generalization. It also has a high F1-Score 86% which shows a good balance between precision and recall.
 
-## Final Model
-Our final model is the tuned Random forest with best parameters as {'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 20}
-
-![image](https://github.com/kithinji007/Sentiments-Analysis/assets/128479803/ef1fe070-418f-46f6-b7ca-b9dc1c615359)
 
 ## Conclusion
 Google and Apple products are vastly used in the world. This study successfully achieved its objectives aimed at understanding the sentiment dynamics surrounding Google and Apple products on Twitter.
