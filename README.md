@@ -52,7 +52,7 @@ It  had an accuracy of 98% on training data against an 86% on test data.
 
 ## Comparing it with Neural Network
 
-![NN](image-1.png)
+![download](https://github.com/kithinji007/Sentiments-Analysis/assets/110093196/918941e7-9dee-4092-8e09-6cf84e43eab1)
 
 The Neural Network performed really well with 85% accuracy. The plot showcasing the learning curve is ideal with both the training and validation curve accuracy increasing with the number of epochs and then later plateaus indicating that the model has learnt from the training data and generalizes well to new data.
 
